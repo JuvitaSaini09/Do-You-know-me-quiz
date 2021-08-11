@@ -24,20 +24,21 @@ var array=[
    }
 
 
-function playgame(QuestionOne, AnswerOne) {
+function playgame(QuestionOne, AnswerOne) { 
+  console.log("ques :")
 	var userans = readlineSync.question(QuestionOne);
 	if (userans.toUpperCase() === AnswerOne.toUpperCase()) {
 		console.log('\n You are correct ');
 		score = score + 1;
-		console.log('\n scores are : ' + score);
+		console.log(' scores are : ' + score);
 	} else {
-		console.log('\n You are wrong');
-    console.log('\n Right Answer is :' + AnswerOne);
-		console.log('\n scores are : ' + score);
+		console.log('\n You are wrong !!');
+    console.log(' Right Answer is :' + AnswerOne);
+		console.log(' scores are : ' + score);
 	} 
-	console.log("-----------------")
+	console.log("-----------------\n")
 }
-console.log("\n "); 
-console.log("***************Game Ends************")
+ 
+console.log("***************Game Ends************\n")
 
 console.log("   your final scores are  -->  "+score);
